@@ -34,7 +34,7 @@
 @layer base {
 
   p {
-    font-size: clamp(var(--min-para-size), var(--curr-parap-size), var(--max-para-size));
+    /* font-size: clamp(var(--min-para-size), var(--curr-parap-size), var(--max-para-size)); */
     font-weight: 400;
   }
 
@@ -52,6 +52,7 @@
     font-size: clamp(var(--min-h3-size), var(--curr-h3-size), var(--max-h3-size)) !important;
     font-weight: 700;
   }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
@@ -79,6 +80,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 224 71.4% 4.1%;
     --foreground: 210 20% 98%;
@@ -113,6 +115,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
