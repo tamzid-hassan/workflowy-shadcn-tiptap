@@ -1,29 +1,26 @@
 import { Button } from '../ui/button'
-import { HamburgerMenuIcon, ChevronLeftIcon, ChevronRightIcon, HomeIcon } from "@radix-ui/react-icons"
+import { ChevronLeft, ChevronRight, HomeIcon, MenuIcon } from "lucide-react"
 import GearMenu from './GearMenu'
+import ItemTypePickerMenu from './ItemTypePickerMenu'
+import ToggleCompletedMenu from './ToggleCompletedMenu'
+import Search from './Search'
 
 function header() {
     return (
-        <div className=''>
-            <div>
-                <Button variant="outline" size="icon">
-                    <HamburgerMenuIcon className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon">
-                    <ChevronLeftIcon className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon">
-                    <ChevronRightIcon className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon">
-                    <HomeIcon className="w-4 h-4" />
-                </Button>
+        <div className='flex justify-between px-4 py-2 shadow'>
+            <div className='flex gap-x-4'>
+                <MenuIcon strokeWidth={1} className='navLinks' />
+                <ChevronLeft strokeWidth={1} className='navLinks' />
+                <ChevronRight strokeWidth={1} className='navLinks' />
+                <HomeIcon strokeWidth={1} className='navLinks' />
             </div>
-            <div>
-                <div>
-
+            <div className='flex gap-x-4'>
+                <div className='relative w-40 top-1'>
+                    <Search />
                 </div>
-                <div>
+                <div className='flex gap-x-2'>
+                    <ToggleCompletedMenu />
+                    <ItemTypePickerMenu />
                     <GearMenu />
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -14,58 +14,58 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-import { DotsVerticalIcon, GearIcon, ExitIcon, ExclamationTriangleIcon, InfoCircledIcon, TrashIcon, DownloadIcon, LineHeightIcon, TextAlignMiddleIcon, FileIcon, Share2Icon, SymbolIcon, ReloadIcon, ResetIcon } from "@radix-ui/react-icons"
+import { EllipsisVerticalIcon, SettingsIcon, RotateCwIcon, LogOutIcon, BugIcon, InfoIcon, TrashIcon, DownloadIcon, Maximize2Icon, ChevronsDownUpIcon, FileIcon, Share2Icon, SaveIcon, RefreshCcwIcon } from "lucide-react"
 
 
 function GearMenu() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <DotsVerticalIcon variant="outline" />
+                <EllipsisVerticalIcon strokeWidth={1} className="navLinks" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56">
+            <DropdownMenuContent className="w-56 mt-2 mr-2">
                 {/* <DropdownMenuLabel>Actions</DropdownMenuLabel>
                 <DropdownMenuSeparator /> */}
                 <DropdownMenuGroup>
                     <DropdownMenuItem>
-                        <ResetIcon className="size-4" />
+                        <RefreshCcwIcon className="size-4" strokeWidth={1} />
 
                         <p className="ml-2">Undo</p>
-                        <DropdownMenuShortcut>ctrl+z</DropdownMenuShortcut>
+                        <DropdownMenuShortcut>Ctrl+Z</DropdownMenuShortcut>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <ReloadIcon className="size-4" />
+                        <RotateCwIcon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Redo</p>
-                        <DropdownMenuShortcut>ctrl+y</DropdownMenuShortcut>
+                        <DropdownMenuShortcut>Ctrl+Y</DropdownMenuShortcut>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <SymbolIcon className="size-4" />
+                        <SaveIcon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Save</p>
-                        <DropdownMenuShortcut>ctrl+s</DropdownMenuShortcut>
+                        <DropdownMenuShortcut>Ctrl+S</DropdownMenuShortcut>
                     </DropdownMenuItem>
                     <p className="ml-3 text-xs text-neutral-500">Autosaved 25 seconds ago</p>
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
                     <DropdownMenuItem>
-                        <LineHeightIcon className="size-4" />
+                        <Maximize2Icon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Expand All</p>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <TextAlignMiddleIcon className="size-4" />
+                        <ChevronsDownUpIcon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Collapse All</p>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <FileIcon className="size-4" />
+                        <FileIcon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Print</p>
-                        <DropdownMenuShortcut>ctrl+p</DropdownMenuShortcut>
+                        <DropdownMenuShortcut>Ctrl+P</DropdownMenuShortcut>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <Share2Icon className="size-4" />
+                        <Share2Icon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Export All</p>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <DownloadIcon className="size-4" />
+                        <DownloadIcon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Download Files</p>
                     </DropdownMenuItem>
                     {/* <DropdownMenuSub>
@@ -83,28 +83,28 @@ function GearMenu() {
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
                     <DropdownMenuItem>
-                        <GearIcon className="size-4" />
+                        <SettingsIcon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Settings</p>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <InfoCircledIcon className="size-4" />
+                        <InfoIcon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Help</p>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <ExclamationTriangleIcon className="size-4" />
+                        <BugIcon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Report a problem</p>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                        <TrashIcon className="size-4" />
+                        <TrashIcon className="size-4" strokeWidth={1} />
                         <p className="ml-2">Trash</p>
                     </DropdownMenuItem>
                 </DropdownMenuGroup>
                 {/* <DropdownMenuItem disabled>API</DropdownMenuItem> */}
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
-                    <ExitIcon className="size-4" />
+                    <LogOutIcon className="size-4" strokeWidth={1} />
                     <p className="ml-2">Logout</p>
-                    <DropdownMenuShortcut>ctrl+q</DropdownMenuShortcut>
+                    <DropdownMenuShortcut>Ctrl+Q</DropdownMenuShortcut>
                 </DropdownMenuItem>
                 <p className="ml-3 text-xs text-neutral-500">xyz@gmail.com</p>
             </DropdownMenuContent>
