@@ -30,7 +30,7 @@ function ToggleCompletedMenu() {
             <DropdownMenuTrigger asChild>
                 <CheckIcon
                     onMouseOver={() => setIsHovering(!isHovering)}
-                    strokeWidth={2}
+                    strokeWidth={1.5}
                     className={`navLinks ${isChecked ? "text-accent" : "text-neutral-500"}`} />
             </DropdownMenuTrigger>
             <DropdownMenuContent onMouseLeave={() => setIsHovering(!isHovering)} className="w-40 mt-2 mr-2">

@@ -9,12 +9,12 @@ function header() {
     return (
         <div className='flex justify-between px-4 py-2 shadow'>
             <div className='flex gap-x-4'>
-                <MenuIcon strokeWidth={1} className='navLinks' />
-                <ChevronLeft strokeWidth={1} className='navLinks' />
-                <ChevronRight strokeWidth={1} className='navLinks' />
-                <HomeIcon strokeWidth={1} className='navLinks' />
+                <MenuIcon strokeWidth={1.5} className='navLinks' />
+                <ChevronLeft strokeWidth={1.5} className='navLinks' />
+                <ChevronRight strokeWidth={1.5} className='navLinks' />
+                <HomeIcon strokeWidth={1.5} className='navLinks' />
             </div>
-            <div className='flex gap-x-4'>
+            <div className='flex gap-x-2'>
                 <div className='relative w-40 top-1'>
                     <Search />
                 </div>

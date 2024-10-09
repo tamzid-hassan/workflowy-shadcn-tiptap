@@ -19,7 +19,7 @@ function ItemTypePickerMenu() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <ListIcon strokeWidth={1} className="navLinks" />
+                <ListIcon strokeWidth={1.5} className="navLinks" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-40 mt-2 mr-2">
                 <DropdownMenuGroup>

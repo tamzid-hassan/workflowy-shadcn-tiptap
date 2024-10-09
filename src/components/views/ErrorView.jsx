@@ -8,8 +8,8 @@ function ErrorView() {
 
 
     return (
-        <div id="error-page">
-            <h1>Oops!</h1>
+        <div id="error-page" className='flex flex-col items-center justify-center w-full h-screen mx-auto'>
+            <h4 className='mb-2 text-5xl font-bold'>Oops!</h4>
             <p>Sorry, an unexpected error has occurred.</p>
             <p>
                 <i>{error.statusText || error.message}</i>

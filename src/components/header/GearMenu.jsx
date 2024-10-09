@@ -21,7 +21,7 @@ function GearMenu() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <EllipsisVerticalIcon strokeWidth={1} className="navLinks" />
+                <EllipsisVerticalIcon strokeWidth={1.2} className="navLinks" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56 mt-2 mr-2">
                 {/* <DropdownMenuLabel>Actions</DropdownMenuLabel>
