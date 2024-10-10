@@ -1,4 +1,3 @@
-import { Button } from '../ui/button'
 import { ChevronLeft, ChevronRight, HomeIcon, MenuIcon } from "lucide-react"
 import GearMenu from './GearMenu'
 import ItemTypePickerMenu from './ItemTypePickerMenu'
